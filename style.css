@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    --cor-princiapl:rgb(34, 34, 34);
+    --cor-quadrado:rgb(24, 24, 24);
+    --cor-fonte:#ECF2FF;
+    --fonte-principal:  'Overpass', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    height: 100vh;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-principal);
+}
+
+.container_informações{
+    background-color: var(--cor-princiapl);
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container_informações_titulo{
+    margin-bottom: 40%;
+    margin-top: 10%;
+}
+
+.container_informações_conteudo{
+    display: flex;
+    flex-direction: column;
+
+}
+.info_conteudo_texto{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    margin: 30% 0% 10% 0;
+}
+
+.container_conteudo{
+    padding: 3%;
+    background-color: rgb(48, 48, 48);
+}
+.container_titulo{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.container_conteudo_quadrado{
+    margin-top: 11%;
+    display:flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    background:transparent;
+    border-radius: 20px;
+    box-shadow: 0px 9px 15px 5px rgb(20, 20, 20);
+    height: 20em;
+}
+
+.conteudo_box{
+    margin-top: 2.5em;
+    width: 10em;
+    height: 10em;
+    clip-path: polygon();
+    background-color: var(--cor-quadrado);
+    text-align: center;
+    padding: 1em;
+    padding-top: 4em;
+    box-shadow: 0px 10px 10px rgb(12, 12, 12);
+    border-radius: 20px;
+}
+
+.checkbox{
+    margin-top: 15%;
+}
+.inlineblock p{
+    display: inline-block;
+    margin-top: 12%;
+    font-size: 16px;
+}
