@@ -22,9 +22,9 @@ entradaDeCasa.addEventListener('click', function (){
             let hours = dateToday.getHours();
             let minutes = dateToday.getMinutes();
 
-            dia_2.innerHTML = day;
-            mes_2.innerHTML = month;
-            horas_2.innerHTML = hours;
+            dia_2.innerHTML = "0" + day;
+            mes_2.innerHTML = "0" + month;
+            horas_2.innerHTML = hours + ":";
             minuto_2.innerHTML = minutes;
         }
         else{

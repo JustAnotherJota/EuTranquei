@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
-:root{
-    --cor-princiapl:rgb(34, 34, 34);
-    --cor-quadrado:rgb(24, 24, 24);
-    --cor-fonte:#ECF2FF;
-    --fonte-principal:  'Overpass', sans-serif;
-}
+@media screen and (min-width: 1124px) 
+{
 
 .container{
     display: grid;
@@ -25,29 +20,46 @@
 }
 
 .container_informações_titulo{
-    margin-bottom: 40%;
+    margin-bottom: 45%;
     margin-top: 10%;
 }
+.container__botao{
+    display: none;
+}
 
-.container_informações_conteudo{
+.cabecalho_menu_botao{
+ display: none;
+}
+
+.lista-menu{
     display: flex;
     flex-direction: column;
-
 }
+
 .info_conteudo_texto{
     text-decoration: none;
     color: var(--cor-fonte);
-    margin: 30% 0% 10% 0;
+    margin: 30% 0% 15% 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
 }
 
 .container_conteudo{
     padding: 3%;
     background-color: rgb(48, 48, 48);
+    align-items: normal;
 }
 .container_titulo{
     text-align: center;
     font-size: 3em;
     font-weight: 700;
+    padding: 0em;
+    margin: 0em;
+    box-shadow: none;
+    background-color:rgb(48, 48, 48);
+    border-radius: none;
+    
 }
 
 .container_conteudo_quadrado{
@@ -62,6 +74,7 @@
 }
 
 .conteudo_box{
+    display: block;
     margin-top: 2.5em;
     width: 10em;
     height: 10em;
@@ -74,11 +87,37 @@
     border-radius: 20px;
 }
 
+.shadowboxMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: none;
+    box-shadow: none;
+    padding: 0em;
+}
+
+.ObjetoTrancado{
+    padding: 0em ;
+    margin-bottom: 0em;
+    font-size: 24px;
+}
+
 .checkbox{
     margin-top: 15%;
 }
-.inlineblock p{
-    display: inline-block;
+.inlineblock {
+    justify-content: center;
     margin-top: 12%;
-    font-size: 16px;
+    font-size: 20px;
+    display: flex;
+    border-radius: none;
+    box-shadow: none;
+    
+}
+.paragrafo_inline_espacamento{
+    margin-right: 4px;
+    margin-left: 4px;
+}
 }

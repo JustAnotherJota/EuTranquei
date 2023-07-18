@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    --cor-princiapl:rgb(34, 34, 34);
+    --cor-quadrado:rgb(24, 24, 24);
+    --cor-fonte:#ECF2FF;
+    --fonte-principal:  'Overpass', sans-serif;
+}
+
+
+.container{
+    color:var(--cor-fonte);
+    font-family: var(--fonte-principal);
+    background-color:rgb(30, 30, 30);
+}
+
+.container_informações{
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.container_informações_titulo{
+    padding: 0.5em;
+}
+/* .container__botao{
+    display: ;
+} */
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.cabecalho_menu_botao{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-image: url("../img/trigun40.png");
+
+}
+
+.container__botao:checked~.container__menu_botao > .cabecalho_menu_botao {
+    background-image: url("../img/trigun30.png");
+}
+
+.lista-menu{
+    display: none;
+    text-align: center;
+}
+.lista-menu__item{
+    padding: 0.5em;
+
+}
+.cabecalho_menu_espaco{
+    padding: 1em;
+}
+.info_conteudo_texto{
+    color:var(--cor-fonte);
+    text-decoration: none;
+}
+
+/*  MAIN */
+
+.container_conteudo {
+    padding-top: 1em;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_titulo{
+    padding: 1em;
+    margin: 2em 1em 0.5em 1em;
+    font-size: 26px;
+    box-shadow: 0px 10px 10px rgb(15, 15, 15);
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20) ;
+}
+
+.container_conteudo_quadrado{
+    margin-top: 2.5em;
+}
+
+.conteudo_box{
+    display: flex;
+    padding: 3em 0em 3em 0em;
+    flex-direction: column;
+}
+
+
+.shadowboxMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 9px 15px 5px rgb(10, 10, 10);
+    padding: 1em 8em 1em 0em;
+}
+
+.ObjetoTrancado{
+    padding: 0em 10em 0em 0em;
+    margin-bottom: 1em;
+    font-size: 19px;
+}
+
+.inlineblock{
+    display: flex;
+    font-size: 18px;
+
+}
+.paragrafo_inline_espacamento{
+    margin-right: 4px;
+    margin-left: 4px;
+}

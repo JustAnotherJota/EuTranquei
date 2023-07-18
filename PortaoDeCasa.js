@@ -22,9 +22,9 @@ portaCasa.addEventListener('click', function (){
             let hr = dateToday.getHours();
             let minute = dateToday.getMinutes();
 
-            dia.innerHTML = day; 
-            mes.innerHTML = month;
-            horas.innerHTML = hr;
+            dia.innerHTML = "0" + day; 
+            mes.innerHTML = "0" + month;
+            horas.innerHTML = hr + ":";
             minutos.innerHTML = minute;
 
         }

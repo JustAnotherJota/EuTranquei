@@ -5,65 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mobileStyle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href=".js">
     <title>Eu tranquei?</title>
 </head>
 <body class="container">
+
     <div class="container_informações">
+        
+        <h3 class="container_informações_titulo">Sobre mim:</h3> 
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__menu_botao ">
+                <span class="cabecalho_menu_botao cabecalho_menu_espaco slider"></span>
+            </label>
 
-        <div class="container_informações_titulo">Sobre mim:</div>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a class="info_conteudo_texto" target="_blank" href="https://github.com/jotabtw">GitHub</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="info_conteudo_texto" target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-bernardino-75931019a/">Linkedin</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="info_conteudo_texto" target="_blank" href="https://www.artstation.com/jotabtw">Arte</a>
+                </li>
+        </ul>
 
-        <div class="container_informações_conteudo">
-
-            <a class="info_conteudo_texto" target="_blank" href="https://github.com/jotabtw">GitHub</a>
-            <a class="info_conteudo_texto" target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-bernardino-75931019a/">Linkedin</a>
-            <a class="info_conteudo_texto" target="_blank" href="https://www.artstation.com/jotabtw">Arte</a>
-        </div>
-        <img src="" alt="">
     </div>
+
+
     <main class="container_conteudo"> 
         <h1 class="container_titulo">Eu tranquei?</h1>
         <div class="container_conteudo_quadrado">
                 <div class="conteudo_box">
-                    <h3>Portão de casa</h3>
+                    <h3 class="ObjetoTrancado">Portão de casa</h3>
+
+                    <div class="shadowboxMobile">
                     <input type="checkbox" id="checkbox_1" class="checkbox">
-                    <label class="container_trocarCor" for="colorMode"></label>
-                    <div class="inlineblock">
+
+                    <div class="inlineblock ">
+                        
                         <p class="Dia" id="Dia_1"></p>
                         <p>/</p>
                         <p class="Mes" id="Mes_1"></p>
-                        <p>as</p>
+                        <div class="paragrafo_inline_espacamento">
+                            <p>as</p>
+                            </div>
                         <p class="Hora" id="Horas_1"></p>
                         <p class="Minutos" id="Minutos_1"></p>
                 </div>
-
+            </div>
                 </div>
                 <div  class="conteudo_box">
-                    <h3>Entrada de casa</h3>
+                    <h3 class="ObjetoTrancado" >Entrada de casa</h3>
+                    <div class="shadowboxMobile">
                     <input type="checkbox" id="checkbox_2" class="checkbox">
-                    <label class="container_trocarCor" for="colorMode"></label>
+
                     <div class="inlineblock">
                         <p class="Dia" id="Dia_2"></p>
                         <p>/</p>
                         <p class="Mes" id="Mes_2"></p>
-                        <p>as</p>
+                        <div class="paragrafo_inline_espacamento">
+                            <p>as</p>
+                            </div>
                         <p class="Hora" id="Horas_2"></p>
                         <p class="Minutos" id="Minutos_2"></p>
                 </div>
                 </div>
+            </div>
                 <div  class="conteudo_box">
-                    <h3>Porta do carro</h3>
+                    <h3 class="ObjetoTrancado" >Porta do carro</h3>
+                    
+                    <div class="shadowboxMobile">
                     <input type="checkbox" id="checkbox_3" class="checkbox">
-                    <label class="container_trocarCor" for="colorMode"></label>
+                    
                     <div class="inlineblock">
                         <p class="Dia" id="Dia_3"></p>
                         <p>/</p>
                         <p class="Mes" id="Mes_3"></p>
+                        <div class="paragrafo_inline_espacamento">
                         <p>as</p>
+                        </div>
                         <p class="Hora" id="Horas_3"></p>
                         <p class="Minutos" id="Minutos_3"></p>
                     </div>
+                </div>
             </div>
         </div>
     </main>

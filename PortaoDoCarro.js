@@ -22,9 +22,9 @@ portaDoCarro.addEventListener('click', function(){
         let hr = dateToday.getHours();
         let minute = dateToday.getMinutes();
 
-        dia_3.textContent = day;
-        mes_3.textContent = month;
-        horas_3.textContent = hr;
+        dia_3.textContent = "0" + day;
+        mes_3.textContent = "0" + month;
+        horas_3.textContent = hr + ":";
         minutos_3.textContent = minute;
          //criar uma variavel ou algo que seja capaz de armazena o minutos.textContent e então guardar no localStorage
         }
