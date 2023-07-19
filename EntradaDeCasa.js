@@ -17,14 +17,29 @@ entradaDeCasa.addEventListener('click', function (){
 
             let dateToday = new Date ();
             
-            let day = dateToday.getDay();
+            let day = dateToday.getDate();
             let month = dateToday.getMonth()+1;
             let hours = dateToday.getHours();
             let minutes = dateToday.getMinutes();
-
+            
+            if (day < 10)
             dia_2.innerHTML = "0" + day;
+            else
+            dia_2.innerHTML = day;
+
+            if (month < 10)
             mes_2.innerHTML = "0" + month;
+            else
+            mes_2.innerHTML = month;
+
+            if (hours < 10)
+            horas_2.innerHTML = "0" + hours + ":";
+            else
             horas_2.innerHTML = hours + ":";
+
+            if (minutes < 10)
+            minuto_2.innerHTML = "0" + minutes;
+            else
             minuto_2.innerHTML = minutes;
         }
         else{

@@ -17,16 +17,32 @@ portaDoCarro.addEventListener('click', function(){
 
         let dateToday = new Date();
     
-        let day = dateToday.getDay();
+        let day = dateToday.getDate();
         let month = dateToday.getMonth()+1;
         let hr = dateToday.getHours();
         let minute = dateToday.getMinutes();
 
+        if(day < 10)
         dia_3.textContent = "0" + day;
+        else
+        dia_3.textContent = day;
+        
+        if(month < 10)
         mes_3.textContent = "0" + month;
+        else
+        mes_3.textContent = month;
+        
+        if (horas_3 < 10)
+        horas_3.textContent = "0" + hr + ":";
+        else
         horas_3.textContent = hr + ":";
+
+        if(minute >=10)
         minutos_3.textContent = minute;
-         //criar uma variavel ou algo que seja capaz de armazena o minutos.textContent e então guardar no localStorage
+        else
+        minutos_3.textContent = "0" + minute;
+        
+        //criar uma variavel ou algo que seja capaz de armazena o minutos.textContent e então guardar no localStorage
         }
         else {
             dia_3.innerHTML =" ";
