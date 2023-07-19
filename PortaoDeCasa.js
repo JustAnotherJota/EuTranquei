@@ -11,7 +11,7 @@ portaCasa.addEventListener('click', function (){
 
     function exibirHora(){
     
-        const relogio1 = setInterval(function tempo(){
+        const relogio1 = setTimeout(function tempo(){
     
 
             if (portaCasa.checked) {
