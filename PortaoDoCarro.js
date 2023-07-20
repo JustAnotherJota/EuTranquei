@@ -37,7 +37,7 @@ portaDoCarro.addEventListener('click', function(){
         else
         horas_3.textContent = hr + ":";
 
-        if(minute >=10)
+        if(minute >= 10)
         minutos_3.textContent = minute;
         else
         minutos_3.textContent = "0" + minute;

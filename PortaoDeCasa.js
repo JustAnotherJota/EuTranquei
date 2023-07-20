@@ -38,10 +38,10 @@ portaCasa.addEventListener('click', function (){
             else
             horas.innerHTML = hr + ":";
 
-            if(minute >=10)
-            minutos.innerHTML = minute;
-            else
+            if(minute < 10)
             minutos.innerHTML = "0" + minute;
+            else
+            minutos.innerHTML = + minute;
 
 
             localStorage.setItem("teste", JSON.stringify(portaCasa));
@@ -50,10 +50,13 @@ portaCasa.addEventListener('click', function (){
             localStorage.setItem("horas", JSON.stringify(hr));
             localStorage.setItem("minutos", JSON.stringify(minute));
 
+            let minutosGetItem = localStorage.getItem ("minutos");
             function checkLocalStorage() {
-                localMinute = localStorage.getItem("minutos");
+                localMinute = minutosGetItem;
+                if (minute < 10)
+                minutos.innerHTML = "0" + localMinute;
+                else
                 minutos.innerHTML = localMinute;
-    
             }
             }
 
