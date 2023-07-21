@@ -5,6 +5,42 @@ const minutos_3 = document.getElementById('Minutos_3')
 
 const portaDoCarro = document.getElementById('checkbox_3')
 
+
+function checkLocalStorage3 () {
+
+    const dia_3GetItemObject = JSON.parse(localStorage.getItem("Local_dia_3"));
+    const mes_3GetItemObject = JSON.parse(localStorage.getItem("Local_mes_3"));
+    const horas_3GetItemObject = JSON.parse(localStorage.getItem("Local_horas_3"));
+    const minutos_3GetItemObject = JSON.parse (localStorage.getItem("Local_minutos_3"))
+
+    if(localStorage.getItem("botao_3")){
+        const botao_3GetItemObject = localStorage.getItem("botao_3");
+        portaDoCarro.checked = botao_3GetItemObject;
+    }
+
+    if(dia_3GetItemObject < 10)
+        dia_3.innerHTML = "0"+ dia_3GetItemObject;
+    else
+        dia_3.innerHTML = dia_3GetItemObject;
+    
+    if(mes_3GetItemObject < 10 )
+        mes_3.innerHTML = "0" + mes_3GetItemObject;
+    else
+        mes_3.innerHTML = mes_3GetItemObject;
+
+    if (horas_3GetItemObject < 10) 
+        horas_3.innerHTML = "0" + horas_3GetItemObject + ":";
+    else
+        horas_3.innerHTML =  horas_3GetItemObject + ":";
+
+    if(minutos_3GetItemObject < 10)
+        minutos_3.innerHTML = "0" + minutos_3GetItemObject;
+    else
+        minutos_3.innerHTML = minutos_3GetItemObject;
+}
+
+checkLocalStorage3();
+
 portaDoCarro.addEventListener('click', function(){
 
     exibirHora(); 
@@ -21,6 +57,7 @@ portaDoCarro.addEventListener('click', function(){
         let month = dateToday.getMonth()+1;
         let hr = dateToday.getHours();
         let minute = dateToday.getMinutes();
+        
 
         if(day < 10)
         dia_3.textContent = "0" + day;
@@ -42,32 +79,30 @@ portaDoCarro.addEventListener('click', function(){
         else
         minutos_3.textContent = "0" + minute;
         
-        //criar uma variavel ou algo que seja capaz de armazena o minutos.textContent e então guardar no localStorage
+        
+        localStorage.setItem("botao_3", (portaDoCarro.checked));
+        localStorage.setItem("Local_dia_3", JSON.stringify(day));
+        localStorage.setItem("Local_mes_3", JSON.stringify(month));
+        localStorage.setItem("Local_horas_3", JSON.stringify(hr));
+        localStorage.setItem("Local_minutos_3", JSON.stringify(minute));
         }
+
         else {
-            dia_3.innerHTML =" ";
-            mes_3.innerHTML =" ";
-            horas_3.innerHTML =" ";
-            minutos_3.innerHTML =" ";
-        }   
+
+            dia_3.innerHTML = " ";
+            mes_3.innerHTML = " ";
+            horas_3.innerHTML = " ";
+            minutos_3.innerHTML = " ";
+
+            removeItemLocalStorage();
+            function removeItemLocalStorage(){
+
+            localStorage.removeItem("botao_3")
+            localStorage.removeItem("Local_dia_3")
+            localStorage.removeItem("Local_mes_3")
+            localStorage.removeItem("Local_horas_3")
+            localStorage.removeItem("Local_minutos_3")
+        }   }
     })
 }
 })
-/*
-const mes = data.getMonth() + 1;
-const hora = data.getHours();
-const minuto = data.getMinutes();
-const dia = data.getDate();
-
-
-function DataHoraMin(){
-    console.log("dia",dia,"do mês",mes,"no horário:",hora,":",minuto)
-    
-}
-
-DataHoraMin();
-
-function teste(){
-console.log (Horario)
-}
-*/
