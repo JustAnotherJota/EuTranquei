@@ -15,5 +15,4 @@ Ao selecionar o local que foi trancado, a data e horário serão marcados e fixa
 
 ![EuTranqueiSiteFoto](https://github.com/jotabtw/EuTranquei/assets/130765143/e5b69b2a-ce67-4e87-bc93-70ba8e19df53)
 
-PS: O site ainda está em desenvolvimento e está sendo implementado o LocalStorage para que caso a pessoa saia da pagina ou até mesmo feche, as informações não sejam perdidas
 
