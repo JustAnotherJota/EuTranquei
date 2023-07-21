@@ -18,7 +18,7 @@ function checkLocalStorage2(){
     }
 
     if(dia_2GetItemObject < 10)
-        dia_2.innerHTML = "0" + dia_2GetItemObject;
+        dia_2.innerHTML = "11" + dia_2GetItemObject;
     else 
         dia_2.innerHTML = dia_2GetItemObject
 
@@ -37,6 +37,14 @@ function checkLocalStorage2(){
         minuto_2.innerHTML = "0" + minuto_2GetItemObject
     else
         minuto_2.innerHTML = minuto_2GetItemObject
+
+        
+    if( minuto_2GetItemObject === null && mes_2GetItemObject === null && dia_2GetItemObject === null && horas_2GetItemObject === null ){
+        dia_2.innerHTML = " ";
+        mes_2.innerHTML = " ";
+        horas_2.innerHTML = " ";
+        minuto_2.innerHTML = " ";
+    }
 }
 
 checkLocalStorage2();

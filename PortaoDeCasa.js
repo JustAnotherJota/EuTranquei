@@ -29,7 +29,7 @@ const minutosGetItemObject = JSON.parse(localStorage.getItem ("Local_minutos"));
     mes.innerHTML = mesGetItemObject;
 
 
-    if (horasGetItemObject < 10)
+    if (horasGetItemObject < 10 )
     horas.innerHTML = "0" + horasGetItemObject + ":";
     else
     horas.innerHTML = horasGetItemObject + ":";
@@ -38,9 +38,16 @@ const minutosGetItemObject = JSON.parse(localStorage.getItem ("Local_minutos"));
     minutos.innerHTML = "0" + minutosGetItemObject;
     else
     minutos.innerHTML = minutosGetItemObject;
+    
 
-
+    if( diaGetItemObject === null || mesGetItemObject === null || horasGetItemObject === null || minutosGetItemObject === null ){
+        dia.innerHTML = " ";
+        mes.innerHTML =" ";
+        horas.innerHTML =" ";
+        minutos.innerHTML =" ";
 } 
+}
+
 checkLocalStorage();
 
 portaCasa.addEventListener('click', function (){

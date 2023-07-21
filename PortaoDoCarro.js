@@ -37,8 +37,15 @@ function checkLocalStorage3 () {
         minutos_3.innerHTML = "0" + minutos_3GetItemObject;
     else
         minutos_3.innerHTML = minutos_3GetItemObject;
-}
+        
 
+    if ( dia_3GetItemObject === null && mes_3GetItemObject === null && horas_3GetItemObject === null && minutos_3GetItemObject === null) {
+        dia_3.innerHTML = " ";
+        mes_3.innerHTML = " ";
+        horas_3.innerHTML = " ";
+        minutos_3.innerHTML = " ";
+    }
+}
 checkLocalStorage3();
 
 portaDoCarro.addEventListener('click', function(){
